@@ -38,6 +38,5 @@ while(index1 < y.Length)
 index1++;
 }
     
-Console.WriteLine(max);
 Console.WriteLine(max1);
 

@@ -1,42 +1,21 @@
 ﻿//Доп. задача
 
-
 Console.WriteLine("Введите число");
-string n = Console.ReadLine();
-int[] x = new int[n.Length];
-for(int i = 0; i < n.Length; i++)
-{
-    x[i] = int.Parse(n[i].ToString());
-}
-
-int index = 0;
-int find = 0;
-
-while (x[index] != 0)
-{
-    index++;
-}
-find = index;
-
-int[] y = new int[find];
-for(int i = 0; i < find; i++)
-{
-    y[i] = int.Parse(x[i].ToString());
-}
-
-int index1 = 0;
+int n = Convert.ToInt32(Console.ReadLine());
 int max = 0;
 int max1 = 0;
-while(index1 < y.Length)
+while (n != 0)
 {
-    if(y[index1] > max)
+    if (n > max)
     {
         max1 = max;
-        max = y[index1];
+        max = n;
     }
-        
-index1++;
+    Console.WriteLine("Введите число");
+    n = Convert.ToInt32(Console.ReadLine());
 }
-    
+
+
+
 Console.WriteLine(max1);
 
